@@ -1,0 +1,65 @@
+
+/* Mobile-First */
+
+.pedidos-container {
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.pedidos-header {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.pedidos-header h1 {
+    color: #244536;
+    font-size: 1.8rem;
+}
+
+.pedido-card {
+    background: #fff;
+    border: 1px solid #e8dccd;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.05);
+}
+
+.pedido-card h2 {
+    color: #244536;
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+}
+
+.pedido-card p {
+    margin: 12px 0;
+}
+
+.pedido-card button {
+    width: 100%;
+    margin-top: 12px;
+    min-height: 48px;
+}
+
+.pedido-card button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+/* Tablets e computadores */
+@media (min-width: 768px) {
+    .pedidos-container {
+        padding: 40px;
+    }
+
+    .pedido-card {
+        padding: 28px;
+    }
+
+    .pedido-card button {
+        width: auto;
+    }
+}

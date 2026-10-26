@@ -1,0 +1,52 @@
+
+/* Mobile-First: estilos iniciais para celular */
+
+.conta-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #f8f3eb;
+}
+
+.conta-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.conta-card h1 {
+    margin-top: 20px;
+    color: #244536;
+}
+
+.conta-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.conta-card input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.conta-card button {
+    margin-top: 12px;
+    min-height: 48px;
+}
+
+/* Ajuste para telas maiores */
+@media (min-width: 768px) {
+    .conta-card {
+        padding: 40px;
+    }
+}

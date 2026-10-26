@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confira o cardápio de lanches, refeições e sabores nordestinos da Raízes Nordestinas.">
+  <title>Cardápio | Raízes Nordestinas</title>
+  <link rel="stylesheet" href="CSS/style.css"><script src="JS/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">🌵</span><span><strong>Raízes Nordestinas</strong><small>Comida com afeto</small></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav class="site-nav" id="site-nav"><a href="index.html">Início</a><a class="active" href="cardapio.html">Cardápio</a><a href="quemsomos.html">Nossa história</a><a href="contato.html">Contato</a><a href="carrinho.html">Carrinho <span class="cart-count" aria-label="itens no carrinho">0</span></a><a href="login.html">Minha conta</a></nav>
+  </header>
+  <main id="conteudo">
+    <section class="page-hero"><span class="eyebrow">Escolha seu favorito</span><h1>Nosso cardápio</h1><p>Lanches e refeições com sabor de casa. Escolha seus favoritos e adicione ao carrinho. Os preços são demonstrativos e podem ser editados.</p></section>
+    <section class="menu-section">
+      <div class="filter-row" role="group" aria-label="Filtrar itens do cardápio">
+        <button class="filter-button active" data-filter="todos">Todos</button>
+        <button class="filter-button" data-filter="cuscuz">Cuscuz</button>
+        <button class="filter-button" data-filter="tapioca">Tapiocas</button>
+        <button class="filter-button" data-filter="refeicoes">Refeições</button><button class="filter-button" data-filter="porcoes">Porções</button>
+        <button class="filter-button" data-filter="bebidas">Bebidas</button>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card" data-category="cuscuz"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/CuscuzManteigaDerretida.png"
+        alt="Cuscuz nordestino com manteiga derretida"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">CUSCUZ</span><h2>Cuscuz nordestino</h2><p>Cuscuz de milho macio, com manteiga e toque caseiro.</p><div class="menu-card-bottom"><strong>R$ 12,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Cuscuz nordestino" data-price="12.00">Adicionar +</button></div></div></article>
+        <article class="menu-card" data-category="cuscuz"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/CuscuzComOvo.png"
+        alt="Cuscuz nordestino com ovo frito por cima"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">CUSCUZ</span><h2>Cuscuz com ovo</h2><p>Uma combinação clássica para matar a fome.</p><div class="menu-card-bottom"><strong>R$ 16,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Cuscuz com ovo" data-price="16.00">Adicionar +</button></div></div></article>
+        <article class="menu-card" data-category="tapioca"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/TapiocaRecheada.png"
+        alt="Tapioca de queijo"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">TAPIOCA</span><h2>Tapioca de queijo</h2><p>Massa delicada com recheio de queijo derretido.</p><div class="menu-card-bottom"><strong>R$ 14,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Tapioca de queijo" data-price="14.00">Adicionar +</button></div></div></article>
+        <article class="menu-card" data-category="tapioca"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/TapiocaEspecial.png"
+        alt="Tapioca especial"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">TAPIOCA</span><h2>Tapioca especial</h2><p>Queijo e recheio da casa para uma pausa saborosa.</p><div class="menu-card-bottom"><strong>R$ 18,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Tapioca especial" data-price="18.00">Adicionar +</button></div></div></article>
+        <article class="menu-card" data-category="porcoes"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/MandiocaDourada.png"
+        alt="Mandioca dourada"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">PORÇÕES</span><h2>Mandioca dourada</h2><p>Porção para compartilhar — crocante por fora e macia por dentro.</p><div class="menu-card-bottom"><strong>R$ 20,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Mandioca dourada" data-price="20.00">Adicionar +</button></div></div></article>
+        <article class="menu-card" data-category="bebidas"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/SucoDoDia.png"
+        alt="Suco do dia"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">BEBIDAS</span><h2>Suco do dia</h2><p>Consulte os sabores disponíveis e as opções da estação.</p><div class="menu-card-bottom"><strong>R$ 8,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Suco do dia" data-price="8.00">Adicionar +</button></div></div></article>
+
+        <article class="menu-card" data-category="refeicoes"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/BaiãoDeDois.png"
+        alt="Baiao de dois com arroz e feijão-fradinho"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">REFEIÇÃO</span><h2>Baião de dois</h2><p>Arroz, feijão-fradinho e temperos em uma combinação cheia de sabor.</p><div class="menu-card-bottom"><strong>R$ 28,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Baião de dois" data-price="28.00">Adicionar +</button></div></div></article>
+        <article class="menu-card" data-category="refeicoes"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/CarneDeSol.png"
+        alt="Carne de sol com acompanhamentos"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">REFEIÇÃO</span><h2>Carne de sol com acompanhamentos</h2><p>Uma sugestão regional servida com acompanhamentos da casa.</p><div class="menu-card-bottom"><strong>R$ 35,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Carne de sol com acompanhamentos" data-price="35.00">Adicionar +</button></div></div></article>
+        <article class="menu-card" data-category="refeicoes"><div class="menu-art">
+    <img
+        src="IMAGENS/cardapio/FrangoComCuscuz.png"
+        alt="Frango com cuscuz"
+        loading="lazy"
+    >
+</div><div class="menu-card-body"><span class="menu-category">REFEIÇÃO</span><h2>Frango com cuscuz</h2><p>Uma refeição caseira e reconfortante para qualquer momento.</p><div class="menu-card-bottom"><strong>R$ 26,00</strong><button class="button button-primary add-to-cart" type="button" data-name="Frango com cuscuz" data-price="26.00">Adicionar +</button></div></div></article>
+      </div>
+      <p class="menu-disclaimer">Atenção: pratos, descrições e valores são exemplos. Atualize-os conforme o cardápio real antes de divulgar o site.</p>
+    </section>
+    <section class="order-banner"><div><span class="eyebrow">Ficou com vontade?</span><h2>Seu pedido começa aqui</h2><p>Adicione seus favoritos ao carrinho e revise os itens antes de finalizar.</p></div><a class="button button-primary" href="carrinho.html">Ver meu carrinho →</a></section>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">🌵</span><span><strong>Raízes Nordestinas</strong><small>Comida com afeto</small></span></a><p>Sabores que aproximam. ❤️</p><small>© <span class="current-year">2026</span> Raízes Nordestinas.</small></footer>
+</body>
+</html>

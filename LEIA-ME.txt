@@ -1,0 +1,24 @@
+RAÍZES NORDESTINAS — PROJETO MOBILE-FIRST
+
+Conteúdo
+- index.html: página inicial
+- cardapio.html: cardápio com filtros e botões para adicionar produtos
+- carrinho.html: carrinho com quantidades, remoção e resumo de pedido
+- quemsomos.html: apresentação da marca
+- contato.html: página de contato (formulário demonstrativo)
+- CSS/style.css: estilos responsivos Mobile-First
+- JS/script.js: menu mobile, filtros, carrinho em localStorage e preparação de pedido
+- IMAGENS/: imagens mantidas do projeto original enviado para reaproveitamento futuro
+
+COMO TESTAR
+1. Extraia o ZIP para uma pasta.
+2. Abra index.html no navegador ou abra a pasta no VS Code.
+3. Acesse Cardápio, clique em Adicionar e depois em Carrinho.
+4. O carrinho fica salvo no navegador usando localStorage.
+
+ANTES DE PUBLICAR
+- Os pratos e preços são exemplos: substitua pelos valores reais.
+- Para abrir o pedido no WhatsApp, edite JS/script.js e preencha WHATSAPP_NUMBER com código do país + DDD + número, só dígitos (ex.: 5511999999999).
+- O cálculo de entrega e o pagamento ainda precisam ser integrados/confirmados.
+- O formulário de contato é demonstrativo e não envia dados para um servidor.
+- As imagens preservadas do ZIP original eram de um projeto de doação de alimentos; não são usadas automaticamente no layout da lanchonete. Substitua-as por fotos autorizadas dos produtos quando possível.

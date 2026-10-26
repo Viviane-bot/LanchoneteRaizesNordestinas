@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pagamento | Raízes Nordestinas</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/pagamento.css">
+
+    <script src="JS/pagamento.js" defer></script>
+</head>
+<body>
+    <main class="pagamento-container">
+        <section class="pagamento-card">
+            <a href="meus-pedidos.html">
+                ← Voltar aos meus pedidos
+            </a>
+
+            <h1>🌵 Pagamento do pedido</h1>
+            <p>Ambiente demonstrativo — nenhuma cobrança será realizada.</p>
+
+            <div id="resumo-pagamento" aria-live="polite"></div>
+
+            <form id="form-pagamento" hidden>
+                <h2>Escolha como deseja pagar</h2>
+
+                <label for="metodo">
+                    Forma de pagamento
+                </label>
+                <select id="metodo" required>
+                    <option value="">Selecione</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão">Cartão</option>
+                </select>
+
+                <label for="resultado">
+                    Resposta simulada do serviço
+                </label>
+                <select id="resultado" required>
+                    <option value="">Selecione</option>
+                    <option value="Aprovado">Aprovado</option>
+                    <option value="Pendente">Pendente</option>
+                    <option value="Recusado">Recusado</option>
+                </select>
+
+                <button type="submit"
+                        class="button button-primary">
+                    Simular pagamento
+                </button>
+            </form>
+
+            <div id="retorno-pagamento"
+                 role="status"
+                 aria-live="polite"></div>
+        </section>
+    </main>
+</body>
+</html>
