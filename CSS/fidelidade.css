@@ -1,0 +1,56 @@
+
+/* Primeiro: telas de celular */
+
+.fidelidade-container {
+    width: 100%;
+    max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f3eb;
+}
+
+.fidelidade-container header {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.fidelidade-container h1 {
+    color: #244536;
+}
+
+.fidelidade-card {
+    background: #fff;
+    border: 1px solid #eadfce;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+#total-pontos {
+    display: block;
+    margin: 16px 0;
+    font-size: 2rem;
+    color: #244536;
+}
+
+.promocao {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #f8f3eb;
+}
+
+.promocao h3 {
+    color: #a84d2b;
+}
+
+@media (min-width: 768px) {
+    .fidelidade-container {
+        padding: 40px;
+    }
+
+    .fidelidade-card {
+        padding: 30px;
+    }
+}

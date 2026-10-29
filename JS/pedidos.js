@@ -52,6 +52,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 0
             );
 
+            
+            const cupom = String(dados.get("cupom") || "")
+                .trim()
+                .toUpperCase();
+
+            let desconto = 0;
+
+            if (cupom === "RAIZES10") {
+                desconto = Math.round(total * 0.10 * 100) / 100;
+            } else if (cupom === "NORDESTE5" && total >= 30) {
+                desconto = 5;
+            } else if (cupom !== "") {
+                alert("Cupom inválido ou pedido abaixo do valor mínimo.");
+                return;
+            }
+
+            const totalComDesconto =
+                Math.round((total - desconto) * 100) / 100;
+
+
             const pedido = {
                 id: "RN-" + Date.now(),
                 cliente: String(dados.get("customer")).trim(),
@@ -60,7 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 endereco,
                 observacoes: String(dados.get("notes") || ""),
                 itens: itens.map(item => ({ ...item })),
-                total,
+                subtotal: total,
+                cupom: cupom || null,
+                desconto: desconto,
+                total: totalComDesconto,
                 status: "Recebido",
                 data: new Date().toISOString()
             };
